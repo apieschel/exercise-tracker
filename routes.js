@@ -25,6 +25,7 @@ module.exports = function (app, db) {
 						let toDate; 
 						let exerciseDate;
 						let limit;
+            let duration;
 						let workouts = [];
 						
 						if(req.params.from && req.params.to && req.params.limit) {
