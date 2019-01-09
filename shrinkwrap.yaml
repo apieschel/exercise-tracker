@@ -4,7 +4,7 @@ dependencies:
   dotenv: 6.2.0
   express: 4.16.4
   mongodb: 3.1.10
-  mongoose: 5.4.0
+  mongoose: 5.4.3
   shortid: 2.2.14
 packages:
   /accepts/1.3.5:
@@ -234,10 +234,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-6hHxsp9e6zQU8nXsP+02HGWXwTkOEw6IROhF2ZA28cYbUk4eJ6QbtZvdqZOdD9YPKghG3apk5eOCvs+tLl3lRg==
-  /lodash.get/4.4.2:
-    dev: false
-    resolution:
-      integrity: sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
   /lodash/4.17.11:
     dev: false
     resolution:
@@ -307,12 +303,11 @@ packages:
       mongoose: '*'
     resolution:
       integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
-  /mongoose/5.4.0:
+  /mongoose/5.4.3:
     dependencies:
       async: 2.6.1
       bson: 1.1.0
       kareem: 2.3.0
-      lodash.get: 4.4.2
       mongodb: 3.1.10
       mongodb-core: 3.1.9
       mongoose-legacy-pluralize: 1.0.2
@@ -326,7 +321,7 @@ packages:
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-pFKa6askJ6xwZT6mWuYBwa2R9ryd1+JrXUhKuAUxEGrUMTi8ADcJC/RgBg4fZ1lL6VPVVChsc9wpVn4X6gcWlg==
+      integrity: sha512-zhfypQm63CPYHi43O/3lTcEPVucY3h6CqONbzreMKZIEXtwgkB9HCm4wn441Z9/CpM94G6/NA3wcaRb0N2kPYQ==
   /mpath/0.5.1:
     dev: false
     engines:
@@ -554,5 +549,5 @@ specifiers:
   dotenv: ^6.2.0
   express: ^4.16.4
   mongodb: ^3.1.10
-  mongoose: ^5.4.0
+  mongoose: ^5.4.3
   shortid: ^2.2.14
