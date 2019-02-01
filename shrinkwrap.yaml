@@ -3,8 +3,8 @@ dependencies:
   cors: 2.8.5
   dotenv: 6.2.0
   express: 4.16.4
-  mongodb: 3.1.10
-  mongoose: 5.4.3
+  mongodb: 3.1.13
+  mongoose: 5.4.9
   shortid: 2.2.14
 packages:
   /accepts/1.3.5:
@@ -244,11 +244,11 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
-  /memory-pager/1.3.1:
+  /memory-pager/1.5.0:
     dev: false
     optional: true
     resolution:
-      integrity: sha512-pUf/sGkym2WqFZYTVmdASnSbNfpGc9rwxEHOePx4lT/fD+NHGL1U16Uy4o6PMiVcDv4mp6MI/vaF0c/Kd1QEUQ==
+      integrity: sha512-ZS4Bp4r/Zoeq6+NLJpP+0Zzm0pR8whtGPf1XExKLJBAczGMnSi3It14OiNCStjQjM6NU1okjQGSxgEZN8eBYKg==
   /merge-descriptors/1.0.1:
     dev: false
     resolution:
@@ -278,6 +278,16 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
+  /mongodb-core/3.1.11:
+    dependencies:
+      bson: 1.1.0
+      require_optional: 1.0.1
+      safe-buffer: 5.1.2
+    dev: false
+    optionalDependencies:
+      saslprep: 1.0.2
+    resolution:
+      integrity: sha512-rD2US2s5qk/ckbiiGFHeu+yKYDXdJ1G87F6CG3YdaZpzdOm5zpoAZd/EKbPmFO6cQZ+XVXBXBJ660sSI0gc6qg==
   /mongodb-core/3.1.9:
     dependencies:
       bson: 1.1.0
@@ -297,13 +307,22 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-Uml42GeFxhTGQVml1XQ4cD0o/rp7J2ROy0fdYUcVitoE7vFqEhKH4TYVqRDpQr/bXtCJVxJdNQC1ntRxNREkPQ==
+  /mongodb/3.1.13:
+    dependencies:
+      mongodb-core: 3.1.11
+      safe-buffer: 5.1.2
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-sz2dhvBZQWf3LRNDhbd30KHVzdjZx9IKC0L+kSZ/gzYquCF5zPOgGqRz6sSCqYZtKP2ekB4nfLxhGtzGHnIKxA==
   /mongoose-legacy-pluralize/1.0.2:
     dev: false
     peerDependencies:
       mongoose: '*'
     resolution:
       integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
-  /mongoose/5.4.3:
+  /mongoose/5.4.9:
     dependencies:
       async: 2.6.1
       bson: 1.1.0
@@ -321,7 +340,7 @@ packages:
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-zhfypQm63CPYHi43O/3lTcEPVucY3h6CqONbzreMKZIEXtwgkB9HCm4wn441Z9/CpM94G6/NA3wcaRb0N2kPYQ==
+      integrity: sha512-4dSQpDUe/9b7A7dRrsyJfWmoGEpeMaZ/WZ/KIJFqTHbJm3NUWaWF++hhirAgjtoHNq2ZILIII0LHEhgzP2NuRw==
   /mpath/0.5.1:
     dev: false
     engines:
@@ -496,7 +515,7 @@ packages:
       integrity: sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
   /sparse-bitfield/3.0.3:
     dependencies:
-      memory-pager: 1.3.1
+      memory-pager: 1.5.0
     dev: false
     optional: true
     resolution:
@@ -548,6 +567,6 @@ specifiers:
   cors: ^2.8.5
   dotenv: ^6.2.0
   express: ^4.16.4
-  mongodb: ^3.1.10
-  mongoose: ^5.4.3
+  mongodb: ^3.1.11
+  mongoose: ^5.4.9
   shortid: ^2.2.14
