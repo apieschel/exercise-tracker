@@ -14,7 +14,6 @@ module.exports = function (app, db) {
 	});
 	
 	app.get('/api/exercise/log/:userId/:from?/:to?/:limit?', function (req, res) {
-		
 			User.findById(req.params.userId, function(err, data) {
 				if(data === null || data === undefined) {
 					res.json("Could not find that user id in our database.");						
@@ -28,6 +27,7 @@ module.exports = function (app, db) {
             let duration;
 						let workouts = [];
 						
+            // if all optional parameters are present
 						if(req.params.from && req.params.to && req.params.limit) {
 							fromDate = new Date(req.params.from);
 							toDate = new Date(req.params.to);
@@ -98,7 +98,6 @@ module.exports = function (app, db) {
 						}
 				}
 			});
-		
 	});
 
 	app.post('/api/exercise/new-user', function (req, res) {
@@ -132,5 +131,4 @@ module.exports = function (app, db) {
 			}
 		});
 	});
-	
 }
