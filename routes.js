@@ -120,7 +120,10 @@ module.exports = function (app, db) {
 	});
 	
 	app.post('/api/exercise/add', function (req, res) {
-		User.findByIdAndUpdate(req.body.userId, { $addToSet: {exercises: {description: req.body.description, duration: req.body.duration, date: req.body.date || new Date() } } }, {new: true}, function(err, data) {
+		User.findByIdAndUpdate(req.body.userId, { 
+      $addToSet: {exercises: {description: req.body.description, duration: req.body.duration, date: req.body.date || new Date() } },
+      $inc: {count: 1}
+    }, {new: true}, function(err, data) {
 			if(data === null || data === undefined) {
 				res.json("Could not find that user id in our database.");
 			} else {
